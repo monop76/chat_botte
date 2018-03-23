@@ -1,14 +1,25 @@
 /*
-sources:
-https://www.youtube.com/watch?v=ryY7Dy3z-7Q
- */
+SOURCES
+- tuto video d'envoi de requête POST : https://www.youtube.com/watch?v=ryY7Dy3z-7Q
+- tuto openClassrooms : "Développez votre première application android"
+
+A FAIRE
+- associer les champs de saisie au message POST.
+
+ATTENTION
+Remettre à jour les diagrammes si mon implémentation s'éloigne des modèles :
+    - plus de notification mais bouton désactivé
+*/
 
 
 package com.chat_app.chat_app;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Button;
+import android.widget.EditText;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -27,10 +38,44 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        try {
-            Button PostSend = (Button) findViewById(R.id.btnSend);
+        //création des variables et association avec les éléments de vue
+        EditText mPseudo = (EditText)findViewById(R.id.fieldPseudoPerso);
+        EditText mContact = (EditText)findViewById(R.id.fieldPseudoContact);
+        final Button mPostSend = (Button) findViewById(R.id.btnSend); //"final" pour être accédé depuis l'intérieur d'une classe
 
-            URL url = new URL("https://www.server.com");
+        //activation du bouton si saisie dans les champs de pseudo et de contact
+        mPostSend.setEnabled(false);
+
+        mPseudo.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence1, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence charSequence1, int start, int before, int count) {
+                mPostSend.setEnabled(charSequence1.toString().length() != 0);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable1) {}
+        });
+
+        mContact.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence2, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence charSequence2, int start, int before, int count) {
+                mPostSend.setEnabled(charSequence2.toString().length() != 0);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable2) {}
+        });
+
+
+        //requête POST
+        try {
+            URL url = new URL("http://www.serverTest.com");
 
             HttpsURLConnection connection = (HttpsURLConnection)url.openConnection();
 
@@ -64,13 +109,12 @@ public class MainActivity extends AppCompatActivity {
 
             output += System.getProperty("line.separator") + responseOutput.toString();
 
-            PostSend.setText(output);
+            mPostSend.setText(output);
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
