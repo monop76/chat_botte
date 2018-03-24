@@ -16,7 +16,7 @@ DETTE TECHNIQUE
 - améliorer l'activation du bouton : PSEUDO || CONTACT >> PSEUDO & CONTACT
 - modifier la concaténation de texte : cf les warnings dans le code
 - barre de défilement
-- à l'ouverture de l'appli, ne pas être à l'intérieur du champs
+- chercher une autre méthode : clic bouton à l'extérieur du
 */
 
 package com.chatapp.monop.chatapp_client;
@@ -37,16 +37,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -136,19 +129,5 @@ public class MainActivity extends AppCompatActivity {
                 queue.add(stringRequest);
             }
         });
-
-/*
-            @Override
-            protected Map<String, String> getParams()
-            {
-                Map<String, String>  params = new HashMap<String, String>();
-                params.put("name", "Alif");
-                params.put("domain", "http://itsalif.info");
-
-                return params;
-            }
-        };
-        queue.add(postRequest);
-*/
     }
 }
