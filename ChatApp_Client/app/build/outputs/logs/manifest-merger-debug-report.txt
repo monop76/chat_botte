@@ -4,6 +4,7 @@ ADDED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/
 INJECTED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [com.android.volley:volley:1.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/6b06a59050af74f7d822921c96e3ca7d/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/948102c6663d769cdbc17ac99e764c9a/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/monop/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5e3aaca4ee5e7551fd42d26caeb6287f/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/9f5e1f1da5863fafdedb62c453a8e82f/AndroidManifest.xml:17:1-28:12
@@ -38,6 +39,8 @@ ADDED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/
 		ADDED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/AndroidManifest.xml:5:22-64
 application
 ADDED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/AndroidManifest.xml:7:5-21:19
+MERGED from [com.android.volley:volley:1.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/6b06a59050af74f7d822921c96e3ca7d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/6b06a59050af74f7d822921c96e3ca7d/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/948102c6663d769cdbc17ac99e764c9a/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/948102c6663d769cdbc17ac99e764c9a/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/monop/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5e3aaca4ee5e7551fd42d26caeb6287f/AndroidManifest.xml:9:5-20
@@ -90,6 +93,8 @@ uses-sdk
 INJECTED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/AndroidManifest.xml
 INJECTED from /home/monop/Téléchargements/chat_botte/ChatApp_Client/app/src/main/AndroidManifest.xml
+MERGED from [com.android.volley:volley:1.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/6b06a59050af74f7d822921c96e3ca7d/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/6b06a59050af74f7d822921c96e3ca7d/AndroidManifest.xml:7:5-43
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/948102c6663d769cdbc17ac99e764c9a/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/monop/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/948102c6663d769cdbc17ac99e764c9a/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/monop/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5e3aaca4ee5e7551fd42d26caeb6287f/AndroidManifest.xml:5:5-7:41
