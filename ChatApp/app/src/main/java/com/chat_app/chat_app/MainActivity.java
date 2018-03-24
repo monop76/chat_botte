@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         //requête POST
         try {
-            URL url = new URL("http://www.serverTest.com");
+            URL url = new URL("https://www.serverTest.com");
 
             HttpsURLConnection connection = (HttpsURLConnection)url.openConnection();
 
