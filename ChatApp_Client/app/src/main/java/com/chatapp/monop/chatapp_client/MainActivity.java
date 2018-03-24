@@ -16,6 +16,7 @@ DETTE TECHNIQUE
 - améliorer l'activation du bouton : PSEUDO || CONTACT >> PSEUDO & CONTACT
 - modifier la concaténation de texte : cf les warnings dans le code
 - barre de défilement
+- à l'ouverture de l'appli, ne pas être à l'intérieur du champs
 */
 
 package com.chatapp.monop.chatapp_client;

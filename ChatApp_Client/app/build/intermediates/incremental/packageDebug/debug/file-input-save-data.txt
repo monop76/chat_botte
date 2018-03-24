@@ -1,17 +1,17 @@
 #Internal package file, do not edit.
-#Sat Mar 24 23:43:55 CET 2018
-2.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/128
+#Sun Mar 25 00:34:20 CET 2018
+2.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/150
 5.set=DEX
 0.path=classes.dex
 2.baseType=DIRECTORY
-3.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/126
+3.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/148
 2.set=DEX
 1.path=classes.dex
-4.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/129
+4.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/146
 count=6
 5.baseType=DIRECTORY
 2.path=classes.dex
-5.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/127
+5.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/149
 4.set=DEX
 3.path=classes.dex
 3.baseType=DIRECTORY
@@ -19,9 +19,9 @@ count=6
 4.path=classes.dex
 1.baseType=DIRECTORY
 5.path=classes.dex
-0.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/131
+0.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/147
 0.baseType=DIRECTORY
 3.set=DEX
-1.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/130
+1.base=/home/monop/Téléchargements/chat_botte/ChatApp_Client/app/build/intermediates/transforms/dexMerger/debug/145
 4.baseType=DIRECTORY
 0.set=DEX
