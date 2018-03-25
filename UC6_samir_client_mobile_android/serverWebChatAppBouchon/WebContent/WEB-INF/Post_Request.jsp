@@ -8,14 +8,13 @@
 	</head>
 
 	<body>
-		<h3>simulation de l'application android ChatApp'<br><br>
-		requête HTTP POST - réponse JSON</h3>
-
+		<h3>Simulation de mon application cliente android ChatApp'<br><br>
+		requête HTTP POST</h3>
+		
 		<p>Je reçois la réponse : </p>
 		<p>- pseudo (String) : ${pseudo}</p>
 		<p>- contact (String) : ${contact}</p>
 		<p>- message (String) : ${message}</p>
 		<p>- réponse (String) : ${reponse}</p>
-		<p>- réponse (JSON) : ????</p>
 	</body>
 </html>
