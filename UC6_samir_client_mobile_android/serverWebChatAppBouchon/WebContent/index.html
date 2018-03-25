@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>POST request</title>
+	</head>
+
+	<body>
+		<h3>simulation de l'application android ChatApp'<br><br>
+		requête HTTP POST - paramètres String</h3>
+
+		<p>Je simule l'envoi d'une requête HTTP POST envoyée par mon application android ChatApp' :</p>
+		<p>http://serverWebChatAppBouchon/post_Request?pseudo="Samir"&contact="Toto"&message="T'es où Toto ?"</p>
+		<p>- le paramètre "pseudo" de l'URL contient l'émetteur du message.</p>
+		<p>- le paramètre "contact" de l'URL contient le récepteur du message.</p>
+		<p>- le paramètre "message" de l'URL contient le message.</p>
+		
+		<form method="post" action="/serverWebChatAppBouchon/post_Request">	
+		    <fieldset>
+				<label for="pseudo">pseudo : </label>
+				<input type="text" id="pseudo" name="pseudo" placeholder="pseudo" size="15" maxlength="15"/>
+				<br>
+				<label for="contact">contact : </label>
+				<input type="text" id="contact" name="contact" placeholder="contact" size="15" maxlength="15"/>
+				<br>
+				<label for="message">message : </label>
+				<input type="text" id="message" name="message" placeholder="message" size="40" maxlength="40"/>
+				<br>
+		    <input type="submit" value="Envoyer"/>
+		</form>
+	</body>
+</html>
