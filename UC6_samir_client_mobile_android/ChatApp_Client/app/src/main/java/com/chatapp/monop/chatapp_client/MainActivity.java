@@ -18,14 +18,17 @@ DETTE TECHNIQUE
 - modifier la concaténation de texte : cf les warnings dans le code
 - barre de défilement
 - chercher une autre méthode : clic bouton à l'extérieur de la stringRequest
+- scrollbar
 */
 
 package com.chatapp.monop.chatapp_client;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -49,14 +52,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//Variables creations associated to views elements
+        final Context mContext = getApplicationContext();
+
+                //Variables creations associated to views elements
         final EditText mPseudo = (EditText) findViewById(R.id.fieldPseudoPerso); //"final" allows a class to call it
         final EditText mContact = (EditText) findViewById(R.id.fieldPseudoContact);
         final EditText mMessage = (EditText) findViewById(R.id.inputMsg);
         final TextView mDiscussion = (TextView) findViewById(R.id.discussion);
         final Button mPostSend = (Button) findViewById(R.id.btnSend);
 
-//Activation of "Envoyer" button if input detected pseudo or contact fields
+        mDiscussion.setMovementMethod(new ScrollingMovementMethod());
+
+        //Activation of "Envoyer" button if input detected pseudo or contact fields
         mPostSend.setEnabled(false);
 
         mPseudo.addTextChangedListener(new TextWatcher() {
@@ -89,15 +96,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//request POST using volley library
+        //POST request using volley library
+        mPostSend.setOnClickListener(new Button.OnClickListener(){public void onClick(View v) {
 
-        //Instantiate the RequestQueue.
-        final RequestQueue queue = Volley.newRequestQueue(this);
+            //Instantiate the RequestQueue.
+            final RequestQueue queue = Volley.newRequestQueue(mContext);
 
-        //Provide requested URL
-        final String url = "http://192.168.0.16/serverWebChatAppBouchon/post_Request";
+            //Provide requested URL
+            final String url = "http://192.168.0.16:8080/serverWebChatAppBouchon/post_Request";
 
-        // Request a string response from the provided URL.
+//String pour tester la lib volley
+        //Request a string response from the provided URL.
         final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
@@ -124,11 +133,9 @@ public class MainActivity extends AppCompatActivity {
                 return params;
             }
         };
-
-        mPostSend.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v) {
-                // Add the request to the RequestQueue. At this step, the request is sent
+                //Add the request to the RequestQueue. At this step, the request is sent
                 queue.add(stringRequest);
+
             }
         });
     }
