@@ -11,12 +11,13 @@ A FAIRE
 ATTENTION
 - Remettre à jour les diagrammes si mon implémentation s'éloigne des modèles :
     - plus de notification mais bouton désactivé
+    - mon message s'affiche dans la discussion si la requête est correctement envoyée
 
 DETTE TECHNIQUE
 - améliorer l'activation du bouton : PSEUDO || CONTACT >> PSEUDO & CONTACT
 - modifier la concaténation de texte : cf les warnings dans le code
 - barre de défilement
-- chercher une autre méthode : clic bouton à l'extérieur du
+- chercher une autre méthode : clic bouton à l'extérieur de la stringRequest
 */
 
 package com.chatapp.monop.chatapp_client;
@@ -94,15 +95,15 @@ public class MainActivity extends AppCompatActivity {
         final RequestQueue queue = Volley.newRequestQueue(this);
 
         //Provide requested URL
-        final String url = "http://www.google.fr";
+        final String url = "http://192.168.0.16/serverWebChatAppBouchon/post_Request";
 
         // Request a string response from the provided URL.
         final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        // Display the first 1000 characters of the response string.
-                        mDiscussion.setText("Réponse à la requête: " + response.substring(0, 100));
+                        // Display the first 500 characters of the response string.
+                        mDiscussion.setText("Réponse à la requête: " + response.substring(0, 500));
                     }
                 },
                 new Response.ErrorListener() {
@@ -118,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
                 Map<String,String> params = new HashMap<String, String>();
                 params.put("pseudo", mPseudo.toString());
                 params.put("contact",mContact.toString());
+                params.put("message",mMessage.toString());
 
                 return params;
             }
