@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/Post_Request")
-public class Post_Request extends HttpServlet {
+@WebServlet("/Post_Request_String")
+public class Post_Request_String extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public Post_Request() {
+	public Post_Request_String() {
 		super();
 	}
 
@@ -37,6 +37,6 @@ public class Post_Request extends HttpServlet {
 		request.setAttribute("message", message);
 		request.setAttribute("reponse", reponse);
 
-		getServletContext().getRequestDispatcher("/WEB-INF/Post_Request.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/WEB-INF/Post_Request_String.jsp").forward(request, response);
 	}
 }

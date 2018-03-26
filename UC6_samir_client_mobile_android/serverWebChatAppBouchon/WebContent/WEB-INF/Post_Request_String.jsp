@@ -9,7 +9,7 @@
 
 	<body>
 		<h3>Simulation de mon application cliente android ChatApp'<br><br>
-		requête HTTP POST</h3>
+		requête HTTP POST - paramètres String</h3>
 		
 		<p>Je reçois la réponse : </p>
 		<p>- pseudo (String) : ${pseudo}</p>
