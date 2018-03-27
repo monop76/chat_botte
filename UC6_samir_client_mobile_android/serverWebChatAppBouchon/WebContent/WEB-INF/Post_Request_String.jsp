@@ -4,17 +4,9 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>POST response</title>
 	</head>
 
 	<body>
-		<h3>Simulation de mon application cliente android ChatApp'<br><br>
-		requête HTTP POST - paramètres String</h3>
-		
-		<p>Je reçois la réponse : </p>
-		<p>- pseudo (String) : ${pseudo}</p>
-		<p>- contact (String) : ${contact}</p>
-		<p>- message (String) : ${message}</p>
-		<p>- réponse (String) : ${reponse}</p>
-	</body>
+		<p>Message de réponse sans intérêt, si ce n'est de montrer que la requête HTTP est bien transmise au serveur Web "bouchon" ; et que la réponse du serveur est bien reçue par le client android.</p>
+		</body>
 </html>

@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class Post_Request_String extends HttpServlet {
+public class Post_Request_JSON extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public Post_Request_String() {
+	public Post_Request_JSON() {
 		super();
 	}
 
@@ -20,6 +20,6 @@ public class Post_Request_String extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		getServletContext().getRequestDispatcher("/WEB-INF/Post_Request_String.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/WEB-INF/Post_Request_Json.jsp").forward(request, response);
 	}
 }
