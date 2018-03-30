@@ -20,6 +20,13 @@ public class Post_Request_String extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
+		// création d'une réponse au message envoyé
+		String reponse = "Je te fais une réponse générique pour vérifier que la requête HTTP POST avec paramètres en String, et son retour, fonctionnent correctement.";
+
+		// association de la variable créée à la requête
+		request.setAttribute("reponse", reponse);
+
 		getServletContext().getRequestDispatcher("/WEB-INF/Post_Request_String.jsp").forward(request, response);
 	}
 }

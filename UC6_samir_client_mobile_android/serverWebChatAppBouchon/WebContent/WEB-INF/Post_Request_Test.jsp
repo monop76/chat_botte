@@ -12,9 +12,9 @@
 		requête HTTP POST - paramètres String</h3>
 		
 		<p>Je reçois la réponse : </p>
-		<p>- pseudo (String) : ${pseudo}</p>
-		<p>- contact (String) : ${contact}</p>
-		<p>- message (String) : ${message}</p>
-		<p>- réponse (String) : ${reponse}</p>
+		<p>- pseudo : ${param.pseudo}</p>
+		<p>- contact : ${param.contact}</p>
+		<p>- message : ${param.message}</p>
+		<p>- réponse : ${requestScope.reponse}</p>
 	</body>
 </html>
